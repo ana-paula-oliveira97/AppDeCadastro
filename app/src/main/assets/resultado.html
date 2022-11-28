@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="fundo">
+
+<%
+String u = request.getParameter("nome");
+String e = request.getParameter("email");
+String t = request.getParameter("telefone");
+String s = request.getParameter("password");
+
+%>
+
+<p>	 	Confirme os dados	 </p>
+
+<form>
+    <p>
+        Nome <input type="text" name="nome" value="<%=u%>"/>
+    </p>
+    <p>
+        Email <input type="text" name="email" value="<%=e%>"/>
+    </p>
+
+    <p>
+        Email <input type="text" name="telefone" value="<%=e%>"/>
+    </p>
+    <p>
+        Senha <input type="text" name="password" value="<%=s%>"/>
+    </p>
+    <input type="submit" value="Confirmar" />
+</form>
+
+</body>
+</html>
